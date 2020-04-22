@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>to do list</title>
+</head>
+<body>
+
+    <div class="list">
+        <h1 class="product">&#9400;Vu.</h1>
+
+        <form action="" id="searchForm">
+            <input type="text" id="search" placeholder="Search item..." autocomplete="off">
+            <a href="" class="searchitem capitalize">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </form>
+        <div class="wrapper">       
+            <div id="todo">
+                <h1 class="capitalize todo">to do list</h1>
+                <div class='show' style="display: none;">Can not blank input! Again</div>
+                <div class="group_input">
+                    <form action="" id="itemForm">
+                        <input type="text" id="input" placeholder="Add a todo..." autocomplete="off">
+                        <button href="" class="additem capitalize" type="submit">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="todolist">
+                <h1 class="notifi"></h1>
+                <div class="items">
+                </div>
+            </div>
+            <div class="clearitem capitalize">clear item</div>
+        </div>
+    </div>
+
+    <div class="edit_name">
+        <div class="rename">
+            <h5>Rename</h5>
+            <input type="text" id="rename_item" autocomplete="off">
+            <div class="btn_confirm">
+                <button class="btn cancel">Cancel</button>
+                <button class="btn btn-primary">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>

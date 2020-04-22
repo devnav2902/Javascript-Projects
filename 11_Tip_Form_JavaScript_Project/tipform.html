@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>pass message</title>
+</head>
+<body>
+    <div id="tip">
+        <div id="tipForm">
+            <h1>Tip Calculator</h1>
+            <h2>How much was your bill ?</h2>
+            <form action="" id="bill">
+                <div class="usd">
+                    <span class="fa fa-usd"></span>
+                    <input type="number" id="inputBill" step="0.01" autocomplete="off">
+                </div>
+                <div class="user">
+                    <span class="fa fa-user"></span>
+                    <input type="number" id="people" step="1" autocomplete="off">
+                </div>
+            </form>
+        </div>
+        <div id="service">
+            <h1>How Was Your Service</h1>
+            <select name="" id="select">
+                <option selected disabled>Choose service</option>
+                <option value="0.2">Great-20%</option>
+                <option value="0.1">Good-10%</option>
+                <option value="0.02">Bad-2%</option>
+            </select>
+        </div>
+        <div id="cal" class="btn btn-danger">Calculator</div>
+        <div class="amount">
+            <h1 class="tipAmount"></h1>
+            <h1 class="totalAmount"></h1>
+            <h1 class="eachAmount"></h1>
+        </div> 
+    </div>
+    <script src="tipform.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+*{margin: 0;padding: 0;box-sizing: border-box!important;}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(images/nairobi_tokio.jpg) center/cover;
+}
+.list {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.wrapper {
+    position: relative;
+    top: 35%;
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+    color: #ffffff!important;
+}
+.group_input {
+    display: flex;
+    flex-wrap: wrap;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+#itemForm,#searchForm {
+    display: flex;
+    flex: 1;
+}
+#input,#search {
+    outline: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 100%;
+}
+#searchForm {
+    transition: 1s;
+    opacity: 0.5;
+    width: 12%;
+    margin: auto;
+}
+#search {
+    width: 100%;
+}
+.additem,.searchitem {
+    color: #ffffff!important;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    text-decoration: none!important;
+    margin-left: 1rem;
+    background: none;
+    transition: 0.4s;
+}
+.additem {
+    position: relative;
+    outline: none!important;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .rename {
+        max-width: 90%;
+        padding: 1rem 2rem!important;
+    }
+    #rename_item {
+        padding: 0;
+    }
+}
+.additem:hover .tooltiptext {
+    visibility: visible;
+}
+.additem .fa,
+.searchitem .fa {
+    margin: auto;
+}
+
+.items {
+    margin-top: 1rem;
+}
+.additem:hover,
+.searchitem:hover {
+    background-color: #a52a2aab;
+}
+.option {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.list_item {
+    text-align: left;
+    flex: 1;
+    font-size: 2rem;
+}
+.list_icon .fa {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.clearitem {
+    background: #ffffff;
+    display: inline-block;
+    border: 1px solid #a52a2aab;
+    border-radius: 5px;
+    color: #a52a2aab;
+    padding: 4px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.clearitem:hover {
+    background:#d52a2cbd;
+    color: #ffffff;
+}
+.edit_name {
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:#17000029;
+    display: none;
+}
+.rename {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff;
+    padding: 2rem 5rem;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+#rename_item {
+    padding: 0 0.25rem;
+}
+.btn {
+    outline: none!important;
+}
+.btn_confirm {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.todo {
+    animation: 3s todo linear infinite;
+}
+@-webkit-keyframes todo {
+    0%{
+        opacity: 0.5;
+        transform: translateY(-15px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+    75%{
+        transform: translateY(-5px);
+
+    }
+    100%{
+        transform: translateY(-15px);
+        opacity: 1;
+    }
+}
+.product {
+    font-size: 1.8rem;
+    margin:0 1rem;
+    display: inline-block;
+    color: white;
+    background-image: linear-gradient(to right,orange,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 3s show linear infinite;
+    transform-origin: 50% 50%;
+}
+@-webkit-keyframes show {
+    0%{
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}

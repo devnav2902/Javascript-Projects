@@ -1,0 +1,123 @@
+*{margin: 0;padding: 0;box-sizing: border-box!important;}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(images/nairobi_tokio.jpg) center/cover;
+}
+.list {
+    width: 100%;
+    height: 100vh;
+}
+.wrapper {
+    position: relative;
+    top: 35%;
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+    color: #ffffff!important;
+}
+.group_input {
+    display: flex;
+    flex-wrap: wrap;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+#input {
+    outline: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.5rem;
+    flex: 1;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+.additem,.searchitem {
+    color: #ffffff!important;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none!important;
+    margin-left: 1rem;
+}
+.additem .fa,
+.searchitem .fa {
+    margin: auto;
+}
+.additem {
+    margin-right: 1rem;
+}
+.items {
+    margin-top: 1rem;
+    /* overflow-y: scroll; */
+    /* height: 200px; */
+}
+.additem:hover,
+.searchitem:hover {
+    background-color: #a52a2aab;
+}
+.option {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.list_item {
+    text-align: left;
+    flex: 1;
+    font-size: 2rem;
+}
+.list_icon .fa {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.clearitem {
+    background: #a52a2aab;
+    display: inline-block;
+    border: 1px solid #a52a2aab;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 2rem;
+}
+.clearitem:hover {
+    background:#d52a2cbd;
+}
+.edit_name {
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:#17000029;
+    display: none;
+}
+.rename {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff;
+    padding: 2rem 5rem;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+#rename_item {
+    display: inline-block;
+    padding: 0.5rem 3rem;
+}
+.btn {
+    outline: none!important;
+}
+.btn_confirm {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;box-sizing: border-box!important;}
+#calculator {
+    width: 90%;
+    margin: auto;
+}
+#calInput {
+    width: 100%;
+    height: 15vh;
+    font-size: 5rem;
+}
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn {
+    flex: 0 0 25%;
+    border: 1px solid gray!important;
+}
+.btn-yellow{
+    background: black!important;
+    color: #ffffff!important;
+}
