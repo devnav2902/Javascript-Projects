@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>pass message</title>
+</head>
+<body>
+   <div class="content">
+       <div class="container">
+           <h3>Counter</h3>
+           <h1 id="number">0</h1>
+
+            <form id="form" class="form-inline mb-3">
+                <input type="text" class="form-control mr-2" id="input" placeholder="Enter value step" autocomplete="off">
+                <h1 id="notify"></h1>
+            </form>
+
+           <select name="" id="selectStep">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+           </select>
+
+           <button class="btn btn-dark decrease">Decrease</button>
+           <button class="btn btn-primary increase">Increase</button>
+           <button class="btn btn-warning resetNum">Reset</button>
+
+       </div>
+   </div>
+    
+    <script src="counter.js"></script>
+</body>
+</html>

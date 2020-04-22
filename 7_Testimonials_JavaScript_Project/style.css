@@ -1,0 +1,88 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.content {
+    width: 100%;
+    height: 100vh;
+    background: url(images/manbun.jpg) center/cover;
+    text-align: center;
+    color: #ffffff;
+}
+.centerDiv {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 500px;
+    max-width: 70%;
+    transform: translate(-50%,-50%);
+    border: 1px solid lightblue;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+}
+h1.nameArtist {
+    font-size: 2rem;
+    background-image: linear-gradient(to top, white,yellow);
+    margin-top: 2rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.quote {
+}
+.artist {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    top: 0;
+    margin:0 auto;
+}
+.artist img {
+    margin-top: 1.125rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.star {
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+.star img {
+    width: 100%;
+}
+.btn-left,
+.btn-right{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    background-color: lightcoral!important;
+    z-index: 5;
+    font-size: 10px;
+    transition: 1s!important;
+}
+.btn-right:hover,
+.btn-left:hover {
+    background: rgb(56, 56, 58)!important;
+    transition: 0s!important;
+} 
+.fa {
+    color: white;
+}
+.btn-left {
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+.btn-right {
+    right: 0;
+    transform: translate(50%,-50%);
+}
+.infinite {
+    animation:inf 2s forwards;
+}
+@-webkit-keyframes inf {
+    0%{
+        box-shadow: 1px 1px 4px #2e2e2e;
+    }
+    100%{
+        box-shadow: 1px 0px 12px #ffffff;
+    }
+}

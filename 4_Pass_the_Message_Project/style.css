@@ -1,0 +1,22 @@
+.content {
+    background: lightblue;
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 70%;
+    background: burlywood;
+    padding: 20px;
+}
+#message {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.btn:hover {
+    background-color: red!important;
+}

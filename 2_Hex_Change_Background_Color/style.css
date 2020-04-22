@@ -1,0 +1,13 @@
+.hexaColor {
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: red!important;
+}

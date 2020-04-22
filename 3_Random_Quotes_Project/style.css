@@ -1,0 +1,21 @@
+.randomQuote {
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#quotes {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+.btn:hover {
+    background-color: green!important;
+}

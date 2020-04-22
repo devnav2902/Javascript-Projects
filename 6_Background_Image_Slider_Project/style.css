@@ -1,0 +1,38 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.content {
+    width: 100%;
+    height: 100vh;
+}
+.centerDiv {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 500px;
+    max-width: 80%;
+    transform: translate(-50%,-50%);
+    background: url(images/manbun.jpg) center/cover;
+}
+.btn-left,
+.btn-right{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    background-color: lightcoral!important;
+    z-index: 5;
+}
+.btn-right:hover,
+.btn-left:hover {
+    background: rgb(68, 68, 92)!important;
+} 
+.fa {
+    color: white;
+}
+.btn-left {
+    left: 0;
+    transform: translate(-50%,-50%);
+
+}
+.btn-right {
+    right: 0;
+    transform: translate(50%,-50%);
+}
