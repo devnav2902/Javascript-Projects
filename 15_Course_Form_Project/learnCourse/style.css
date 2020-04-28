@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin-top: 3rem;
+    background-color: #828489;
+}
+.addItems-container {
+    background: #4d7ea8;
+}
+.addItems-container,
+.displayItems-container {
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid #272932;
+    box-shadow: 0 5px 10px #272932;
+}
+.addItems-title,
+.displayItems-title {
+    text-transform: capitalize;
+}
+.addItems-title {
+    color: #b6c2d9;
+}
+.addItems-action,
+.displayItems-action {
+    border: 2px solid #272932;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    display: none;
+}
+.addItems-input {
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid #9e90a2;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #ffffff;
+    outline: none;
+}
+.addItems-submit,
+.displayItems-clear {
+    display: block;
+    width: 80%;
+    margin: 2rem auto 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.addItems-submit {
+    color: #b6c2d9;
+    background: transparent;
+    border: 2px solid #9e90a2;
+    transition: all 1s ease;
+}
+.addItems-submit:hover {
+    background: #b6c2d9;
+    color: #272932;
+}
+.displayItems-container {
+    background: #b6c2d9;
+
+}
+.displayItems-title {
+    color: #4d7ea8;
+    margin-bottom: 0.25rem;
+}
+.grocery-item {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 1s ease-in-out;
+    margin: 0.5rem 0;
+}
+.grocery-item_title {
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    color: #272932;
+}
+.grocery-item:hover {
+    background: #828489;
+}
+.grocery-item_link {
+    color: blue;
+    transition: all 1s linear;
+}
+.displayItems-clear {
+    color: #4d7ea8;
+}
+
+/* action classes */
+.alert {
+    color: red;
+    border-color: red;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.success {
+    color:green;
+    border-color: green;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px){
+    body {
+        grid-template-columns: 50%;
+    }
+}
