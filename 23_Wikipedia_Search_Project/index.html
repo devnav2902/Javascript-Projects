@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- main css -->
+ <link rel="stylesheet" href="css/main.css">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+ <!-- font awesome -->
+ <link rel="stylesheet" href="css/all.css">
+ <title>Wikipedia Search</title>
+ <style>
+ </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" class="img-fluid d-block mx-auto my-4" width="200" alt="">
+        <div class="feedback alert-danger alert text-capitalize text-center">empty value</div>
+        <form action="" id="searchForm" class="my-3">
+          <div class="input-group">
+            <input type="text" autocomplete="off" placeholder="search wikipedia" class="form-control text-capitalize" id="search">
+            <div class="input-group-append">
+              <button type="submit" class="text-capitalize buleBtn">search</button>
+            </div>
+          </div>
+        </form>
+        <img src="img/loading.gif" class="loading" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row output">
+      <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+        <div class="card card-body">
+          <h1 class="card-title blueText">title</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, consequatur aliquam. Corrupti voluptatum perspiciatis a sint, possimus, nobis, quae deleniti minus neque earum consequatur voluptas unde dolor pariatur assumenda repellendus!</p>
+          <a href="#" target="_blank" class="my-2 text-capitalize">read more...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+ <!-- jquery -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="js/app.js"></script>
+</body>
+
+</html>
