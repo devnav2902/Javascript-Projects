@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">RSA algorithm</h1>
+    
+    <div>
+        <h2 class="note">Select integer e | gcd(Φ(n),e) = 1; 1 &lt e &lt Φ(n) </h2>
+    </div>
+    <form class="wrap" type="submit">
+        <div class="value">
+            Enter M
+            <input type="text" class="textM">
+        </div>
+        <!-- <div class="value">
+            Enter e
+            <input type="text" class="textE">
+        </div> -->
+        <div class="value">
+            Enter p
+            <input type="text" class="textP">
+        </div>
+        <div class="value">
+            Enter q
+            <input type="text" class="textQ">
+        </div>
+
+        <button class="btn cal">Calculator</button>
+    </form>
+    <h2 class="alert">Please fill all form input !</h2>
+    <img src="img/loading1.svg" alt="" class="loading">
+    <div class="calcu">
+        <div class="info">
+            <h1>M = <span class="plainttextM"></span></h1>
+            <h1>p = <span class="p"></span></h1>
+            <h1>q = <span class="q"></span></h1>
+            <h1>e = <span class="e"></span></h1>
+        </div>
+        <h1>n = p*q = <span class="p"></span>*<span class="q"></span> = <span class="result_n"></span></h1>
+        <h1>Φ(n) = (p-1)*(q-1) = <span class="result_phi"></span></h1>
+        <h1>de ≡ 1 mod <span class="result_phi"></span> and d < <span class="result_phi">160</span> Value of d = <span class="result_d"></span></h1>
+        <h1>The public key is {e,n} = {<span class="result_public"><span class="e"></span>,<span class="n"></span></span>}</h1>
+        <h1>The private key is {d,n} = {<span class="result_private"><span class="d"></span>,<span class="n"></span></span>}</h1>
+        <h1 class="encrypt">
+            <span>Encrypt: </span>
+            <div class="text">&#160 plaintext M =<span class="plainttextM"></span></div>
+            <div class="text">&#160 ciphertext C = M^e (mod n) = <span class="valueM"></span>^<span class="e"></span>mod <span class="n"></span>=<span class="valueC"></span>
+            </div>
+        </h1>
+        <h1 class="decrypt">
+            <span>Decrypt:</span>
+            <div class="text">&#160 ciphertext C = <span class="textC"></span></div>
+            <div class="text">&#160 plaintext M = C^d (mod n) = <span class="valueC"></span>^<span class="d"></span>mod <span class="n"></span>=<span class="valueM"></span>
+        </h1>
+    </div>
+
+    <script src="algo.js"></script>
+</body>
+</html>
