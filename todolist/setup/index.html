@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <title>Todolist</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="leftside">
+                <div class="text">Homie <br />Dev</div>
+                <div class="box-color">
+                    <div class="flex">
+                        <i class="icon-plus icon fas fa-plus"></i>
+                    </div>
+                    <div class="color-list active">
+                        <li
+                            style="background-color: #ffc972"
+                            data-color="#ffc972"
+                            class="item-color box-color-1"
+                        ></li>
+                        <li
+                            style="background-color: #ff9b73"
+                            data-color="#ff9b73"
+                            class="item-color box-color-2"
+                        ></li>
+                        <li
+                            style="background-color: #b692fe"
+                            data-color="#b692fe"
+                            class="item-color box-color-3"
+                        ></li>
+                        <li
+                            style="background-color: #01d4ff"
+                            data-color="#01d4ff"
+                            class="item-color box-color-4"
+                        ></li>
+                        <li
+                            style="background-color: #e4ee91"
+                            data-color="#e4ee91"
+                            class="item-color box-color-5"
+                        ></li>
+                        <li
+                            style="background-color: #fe6a90"
+                            data-color="#fe6a90"
+                            class="item-color"
+                        ></li>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <header class="header">
+                    <div class="search-bar active">
+                        <i class="fas fa-search"></i>
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            class="input search"
+                            id="search"
+                        />
+                    </div>
+                    <h1 class="title">Notes</h1>
+                </header>
+                <main class="main">
+                    <div class="note-list">
+                        <div
+                            class="note-box"
+                            data-color="#ffc972"
+                            style="background-color: #ffc972"
+                        >
+                            <div class="content">example</div>
+                            <footer class="note-footer">
+                                <div class="date">May 25, 2020</div>
+                                <div class="icons">
+                                    <i class="icon fas fa-trash"></i>
+                                    <i class="icon fas fa-pencil-alt"></i>
+                                </div>
+                            </footer>
+                        </div>
+                        <!-- box item -->
+                        <div
+                            class="note-box"
+                            data-color="#fe6a90"
+                            style="background-color: #fe6a90"
+                        >
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Enim eaque, cumque incidunt
+                                eius, est architecto sequi
+                            </div>
+                            <footer class="note-footer">
+                                <div class="date">May 25, 2020</div>
+                                <div class="icons">
+                                    <i class="icon fas fa-trash"></i>
+                                    <i class="icon fas fa-pencil-alt"></i>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
