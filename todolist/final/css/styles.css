@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5% !important;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    min-height: 100vh;
+    font-size: var(--fontsize-md);
+}
+ul {
+    list-style-type: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+}
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+:root {
+    --fontsize-lg: 2.4rem;
+    --fontsize-md: 1.6rem;
+    --fontsize-sm: 1.2rem;
+    --font-weigth-regular: 400;
+    --font-weigth-bold: 700;
+    --font-weigth-extra-bold: 900;
+    --white-color: #ffffff;
+    --black-color: #161516;
+    --sub-color: #adacae;
+}
+
+.icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: var(--fontsize-md);
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons {
+    display: flex;
+}
+.icons .icon {
+    margin: 0 0.5rem;
+}
+.note-button::before {
+    animation: goleft 2s linear infinite;
+}
+.shadowBox {
+    box-shadow: 0px 2px 11px #6c6cf7;
+}
+@keyframes goleft {
+    0% {
+        transform: translateX(-4px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.input {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 3rem !important;
+    outline: none;
+}
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+}
+.leftside {
+    text-align: center;
+    font-size: var(--fontsize-lg);
+    font-weight: var(--font-weigth-bold);
+    border-right: 1px solid rgb(235, 234, 232);
+    padding: 2rem 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.color-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    transform: translateX(-10rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.color-list.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.color-list li {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.box-color {
+    margin-top: 4rem;
+}
+
+.search-bar i {
+    color: var(--sub-color);
+}
+.search {
+    margin-left: 1rem;
+    color: var(--dark-color);
+    font-weight: var(--font-weigth-regular);
+    font-size: var(--fontsize-lg);
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10rem);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.search-bar.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.rightside {
+    padding: 3rem 5rem;
+}
+.rightside .title {
+    margin: 4rem 0;
+}
+.text-form-input {
+    background: transparent;
+    outline: none;
+    border: none;
+    resize: none;
+}
+.note-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+@media only screen and (max-width: 1200px) {
+    .note-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .note-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .note-list {
+        grid-template-columns: 1fr;
+    }
+}
+.note-box {
+    border-radius: 2rem;
+    background: #ffc972;
+    /* width: 20rem; */
+    min-height: 20rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.note-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date {
+    font-weight: 600;
+}
+.note-it {
+    justify-content: flex-end;
+}
+.note-it .text {
+    cursor: pointer;
+    margin-right: 1rem;
+    font-weight: var(--font-weigth-bold);
+}
